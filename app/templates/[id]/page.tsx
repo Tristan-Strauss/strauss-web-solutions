@@ -1,30 +1,21 @@
 import { notFound } from "next/navigation"
 import Link from "next/link"
-import { StarterTemplate } from "@/components/templates/starter-template"
-import { BusinessTemplate } from "@/components/templates/business-template"
-import { CommerceTemplate } from "@/components/templates/commerce-template"
-import { CreativeTemplate } from "@/components/templates/creative-template"
-import { MinimalTemplate } from "@/components/templates/minimal-template"
-import { ModernTemplate } from "@/components/templates/modern-template"
+import { SinglePageTemplate } from "@/components/templates/single-page-template"
+import { MultiPageTemplate } from "@/components/templates/multi-page-template"
+import { PremiumTemplate } from "@/components/templates/premium-template"
 import { ArrowLeft } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const templates: Record<string, React.ComponentType> = {
-  starter: StarterTemplate,
-  business: BusinessTemplate,
-  commerce: CommerceTemplate,
-  creative: CreativeTemplate,
-  minimal: MinimalTemplate,
-  modern: ModernTemplate,
+  "single-page": SinglePageTemplate,
+  "multi-page": MultiPageTemplate,
+  "premium": PremiumTemplate,
 }
 
-const templateNames: Record<string, string> = {
-  starter: "Starter",
-  business: "Business Pro",
-  commerce: "Commerce",
-  creative: "Creative",
-  minimal: "Minimal",
-  modern: "Modern",
+const templateInfo: Record<string, { name: string; package: string }> = {
+  "single-page": { name: "Single Page", package: "Starter Package - R2,500" },
+  "multi-page": { name: "Multi Page", package: "Business Package - R5,500" },
+  "premium": { name: "Premium", package: "Premium Package - R9,500" },
 }
 
 export default async function TemplatePage({
@@ -40,6 +31,8 @@ export default async function TemplatePage({
     notFound()
   }
 
+  const info = templateInfo[id]
+
   return (
     <div className="min-h-screen">
       {/* Preview Bar */}
@@ -52,13 +45,14 @@ export default async function TemplatePage({
                 Back to Templates
               </Link>
             </Button>
-            <span className="text-sm text-background/60">
-              Previewing: <span className="text-background font-medium">{templateNames[id]}</span>
+            <span className="hidden sm:inline text-sm text-background/60">
+              Previewing: <span className="text-background font-medium">{info.name}</span>
+              <span className="ml-2 text-background/40">({info.package})</span>
             </span>
           </div>
           <Button size="sm" className="bg-background text-foreground hover:bg-background/90" asChild>
             <Link href="/#contact">
-              Use This Template
+              Get This Package
             </Link>
           </Button>
         </div>
@@ -74,11 +68,8 @@ export default async function TemplatePage({
 
 export function generateStaticParams() {
   return [
-    { id: "starter" },
-    { id: "business" },
-    { id: "commerce" },
-    { id: "creative" },
-    { id: "minimal" },
-    { id: "modern" },
+    { id: "single-page" },
+    { id: "multi-page" },
+    { id: "premium" },
   ]
 }

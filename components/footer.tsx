@@ -11,8 +11,8 @@ const footerLinks = {
     { label: "Contact", href: "#contact" },
   ],
   legal: [
-    { label: "Privacy Policy", href: "#" },
-    { label: "Terms of Service", href: "#" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Terms of Service", href: "/terms-of-service" },
   ],
 }
 
@@ -23,10 +23,10 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           <div className="col-span-2 md:col-span-1">
             <a href="#" className="text-xl font-bold">
-              WebCraft
+              Strauss Web Solutions
             </a>
             <p className="mt-4 text-sm text-background/70 max-w-xs">
-              Affordable websites for growing businesses. Design, development, and hosting — all in one place.
+              Affordable websites for plumbers, electricians, and small businesses. Design, development, and hosting — all in one place.
             </p>
           </div>
 
@@ -81,7 +81,7 @@ export function Footer() {
 
         <div className="border-t border-background/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-background/70">
-            &copy; {new Date().getFullYear()} WebCraft. All rights reserved.
+            &copy; {new Date().getFullYear()} Strauss Web Solutions. All rights reserved.
           </p>
           <p className="text-sm text-background/70">
             Made with care in South Africa
