@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'WebCraft - Affordable Websites for Growing Businesses',
-  description: 'Professional website design, development, and hosting for small to medium businesses. Fast turnaround, affordable pricing, hosting included.',
+  title: 'Strauss Web Solutions - Affordable Websites for Growing Businesses',
+  description: 'Professional website design, development, and hosting for small to medium businesses. Plumbers, electricians, and tradespeople. Fast turnaround, affordable pricing, hosting included.',
   generator: 'v0.app',
   icons: {
     icon: [
