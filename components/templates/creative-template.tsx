@@ -7,16 +7,16 @@ export function CreativeTemplate() {
       {/* Header */}
       <header className="fixed top-12 left-0 right-0 z-40 bg-neutral-950/80 backdrop-blur-lg border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-          <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <span className="text-xl font-bold text-amber-400">
             Creative Studio
           </span>
           <nav className="hidden md:flex items-center gap-8 text-sm">
-            <span className="hover:text-purple-400 cursor-pointer transition-colors">Work</span>
-            <span className="hover:text-purple-400 cursor-pointer transition-colors">Services</span>
-            <span className="hover:text-purple-400 cursor-pointer transition-colors">About</span>
-            <span className="hover:text-purple-400 cursor-pointer transition-colors">Contact</span>
+            <span className="hover:text-amber-400 cursor-pointer transition-colors">Work</span>
+            <span className="hover:text-amber-400 cursor-pointer transition-colors">Services</span>
+            <span className="hover:text-amber-400 cursor-pointer transition-colors">About</span>
+            <span className="hover:text-amber-400 cursor-pointer transition-colors">Contact</span>
           </nav>
-          <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
+          <Button className="bg-amber-500 hover:bg-amber-600 text-neutral-950">
             {"Let's Talk"}
           </Button>
         </div>
@@ -24,19 +24,19 @@ export function CreativeTemplate() {
 
       {/* Hero */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-pink-900/20" />
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/30 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-600/30 rounded-full blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-900/20 to-orange-900/20" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-amber-600/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-orange-600/20 rounded-full blur-3xl" />
         <div className="relative max-w-5xl mx-auto px-4 text-center">
           <span className="inline-block px-4 py-2 bg-white/10 rounded-full text-sm mb-8">
             Creative Agency
           </span>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight">
-            <span className="bg-gradient-to-r from-white via-purple-200 to-white bg-clip-text text-transparent">
+            <span className="text-white">
               Lorem Ipsum
             </span>
             <br />
-            <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+            <span className="text-amber-400">
               Dolor Sit Amet
             </span>
           </h1>
@@ -44,10 +44,10 @@ export function CreativeTemplate() {
             Consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-neutral-900 hover:bg-neutral-200">
+            <Button size="lg" className="bg-amber-500 text-neutral-950 hover:bg-amber-400">
               View Our Work <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button size="lg" variant="outline" className="border-white/30 hover:bg-white/10">
+            <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">
               Get in Touch
             </Button>
           </div>
@@ -59,7 +59,7 @@ export function CreativeTemplate() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-end justify-between mb-16">
             <div>
-              <span className="text-purple-400 font-medium">Our Work</span>
+              <span className="text-amber-400 font-medium">Our Work</span>
               <h2 className="text-4xl md:text-5xl font-bold mt-2">Selected Projects</h2>
             </div>
             <span className="text-neutral-400 hover:text-white cursor-pointer hidden md:block">
@@ -78,8 +78,8 @@ export function CreativeTemplate() {
                   <div className="bg-neutral-800 aspect-[4/3] group-hover:scale-105 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
-                <span className="text-purple-400 text-sm">{project.category}</span>
-                <h3 className="text-2xl font-semibold mt-1 group-hover:text-purple-400 transition-colors">
+                <span className="text-amber-400 text-sm">{project.category}</span>
+                <h3 className="text-2xl font-semibold mt-1 group-hover:text-amber-400 transition-colors">
                   {project.title}
                 </h3>
               </div>
@@ -92,7 +92,7 @@ export function CreativeTemplate() {
       <section className="py-32 bg-neutral-950">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-20">
-            <span className="text-purple-400 font-medium">What We Do</span>
+            <span className="text-amber-400 font-medium">What We Do</span>
             <h2 className="text-4xl md:text-5xl font-bold mt-2">Our Services</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -106,10 +106,10 @@ export function CreativeTemplate() {
             ].map((service, i) => (
               <div
                 key={i}
-                className="p-8 border border-white/10 rounded-2xl hover:border-purple-500/50 hover:bg-white/5 transition-all group"
+                className="p-8 border border-white/10 rounded-2xl hover:border-amber-500/50 hover:bg-white/5 transition-all group"
               >
-                <span className="text-purple-400 font-mono text-sm">{service.num}</span>
-                <h3 className="text-2xl font-semibold mt-4 mb-4 group-hover:text-purple-400 transition-colors">
+                <span className="text-amber-400 font-mono text-sm">{service.num}</span>
+                <h3 className="text-2xl font-semibold mt-4 mb-4 group-hover:text-amber-400 transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-neutral-400">{service.desc}</p>
@@ -124,7 +124,7 @@ export function CreativeTemplate() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="order-2 md:order-1">
-              <span className="text-purple-400 font-medium">About Us</span>
+              <span className="text-amber-400 font-medium">About Us</span>
               <h2 className="text-4xl md:text-5xl font-bold mt-2 mb-8">
                 Lorem Ipsum Dolor Sit Amet Consectetur
               </h2>
@@ -141,7 +141,7 @@ export function CreativeTemplate() {
                   { value: "50+", label: "Clients" },
                 ].map((stat, i) => (
                   <div key={i}>
-                    <div className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    <div className="text-3xl font-bold text-amber-400">
                       {stat.value}
                     </div>
                     <div className="text-neutral-400">{stat.label}</div>
@@ -157,16 +157,16 @@ export function CreativeTemplate() {
       </section>
 
       {/* CTA */}
-      <section className="py-32 bg-gradient-to-br from-purple-900 to-pink-900 relative overflow-hidden">
+      <section className="py-32 bg-amber-500 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.1)_0%,transparent_70%)]" />
         <div className="relative max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-6xl font-bold mb-8">
+          <h2 className="text-4xl md:text-6xl font-bold mb-8 text-neutral-950">
             {"Let's Create Something Amazing Together"}
           </h2>
-          <p className="text-xl text-purple-200 mb-12 max-w-2xl mx-auto">
+          <p className="text-xl text-neutral-800 mb-12 max-w-2xl mx-auto">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
           </p>
-          <Button size="lg" className="bg-white text-purple-900 hover:bg-purple-100">
+          <Button size="lg" className="bg-neutral-950 text-white hover:bg-neutral-800">
             Start a Project <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
@@ -177,20 +177,20 @@ export function CreativeTemplate() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-12 mb-16">
             <div className="md:col-span-2">
-              <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+              <span className="text-2xl font-bold text-amber-400">
                 Creative Studio
               </span>
               <p className="text-neutral-400 mt-4 max-w-md">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
               </p>
               <div className="flex gap-4 mt-6">
-                <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-purple-600 cursor-pointer transition-colors">
+                <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-amber-500 hover:text-neutral-950 cursor-pointer transition-colors">
                   <Instagram className="h-5 w-5" />
                 </div>
-                <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-purple-600 cursor-pointer transition-colors">
+                <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-amber-500 hover:text-neutral-950 cursor-pointer transition-colors">
                   <Twitter className="h-5 w-5" />
                 </div>
-                <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-purple-600 cursor-pointer transition-colors">
+                <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-amber-500 hover:text-neutral-950 cursor-pointer transition-colors">
                   <Linkedin className="h-5 w-5" />
                 </div>
               </div>
