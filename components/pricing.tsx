@@ -5,28 +5,26 @@ const packages = [
   {
     name: "Starter",
     subtitle: "Single Page Website",
-    price: "R2,500",
+    price: "R750",
     description: "Perfect for small businesses or personal brands just getting started.",
     features: [
       "1-page scrolling website",
       "Basic design layout",
       "Contact form included",
-      "Mobile responsive",
-      "SSL certificate",
+      "Mobile responsive"
     ],
     popular: false,
   },
   {
     name: "Business",
     subtitle: "Multi-Page Website",
-    price: "R5,500",
+    price: "R1,250",
     description: "Ideal for growing businesses that need more pages and features.",
     features: [
       "3-5 pages included",
       "Enhanced design options",
       "About, Services, Contact pages",
       "Basic SEO structure",
-      "Social media integration",
       "Mobile responsive",
     ],
     popular: true,
@@ -34,7 +32,7 @@ const packages = [
   {
     name: "Premium",
     subtitle: "Advanced Website",
-    price: "R9,500",
+    price: "R2,500",
     description: "For established businesses requiring custom features and advanced design.",
     features: [
       "5+ pages included",

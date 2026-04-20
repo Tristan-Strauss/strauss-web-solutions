@@ -13,10 +13,6 @@ export function Hero() {
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-1.5 text-sm text-muted-foreground mb-6">
-            <span className="w-2 h-2 rounded-full bg-green-500" />
-            Now accepting new clients
-          </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
             Affordable Websites for Growing Businesses
